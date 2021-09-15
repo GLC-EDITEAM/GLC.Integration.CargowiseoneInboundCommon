@@ -1,0 +1,622 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="6193cdbc-07ea-4e0c-ae3c-132364d8932c" LowerBound="1.1" HigherBound="134.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="GLC.Integration.Cargowiseone.Orchestration" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="73a663b3-4155-4270-9e7d-5e6fa40a97a1" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_2" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="9cf868b5-0886-4990-980e-ff8739173c40" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="b94ce9d0-2895-4350-b89a-387ac175a949" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.77">
+                    <om:Property Name="Ref" Value="GLC.Integration.CargowiseoneInboundCommon.Schemas.UniversalEvent" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="b897015a-3b25-430d-bfc1-515fb7c6100c" ParentLink="Module_PortType" LowerBound="11.1" HigherBound="18.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_3" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="00c059c1-258b-4d3e-8d8f-911bdd252d3c" ParentLink="PortType_OperationDeclaration" LowerBound="13.1" HigherBound="17.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="dabd2af8-a4ca-4c58-960a-6599f22aa50a" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="15.13" HigherBound="15.75">
+                    <om:Property Name="Ref" Value="Microsoft.BizTalk.Edi.BaseArtifacts.X12_997Schema.X12_997_Root" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="0e07c1f2-1316-4a46-a393-ea6fbd2a4f91" ParentLink="Module_PortType" LowerBound="18.1" HigherBound="25.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_4" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="b4eff0e8-d49c-4c24-88fd-f4f9ded3b781" ParentLink="PortType_OperationDeclaration" LowerBound="20.1" HigherBound="24.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="e6b70baf-845b-486c-b08c-dae10a2a5123" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="22.13" HigherBound="22.92">
+                    <om:Property Name="Ref" Value="GLC.Integration.CargowiseoneInboundCommon.Schemas.Outbound.LINC.LincFlatFileCSV" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="8b0d4817-0a30-452b-88ba-92de77225a8a" ParentLink="Module_PortType" LowerBound="25.1" HigherBound="32.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SendCB" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="40d1ce7d-935d-4518-a2a2-3301f22a71bb" ParentLink="PortType_OperationDeclaration" LowerBound="27.1" HigherBound="31.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="d00985c1-8e17-43e3-858b-70668b3a9980" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="29.13" HigherBound="29.75">
+                    <om:Property Name="Ref" Value="Microsoft.BizTalk.Edi.BaseArtifacts.X12_997Schema.X12_997_Root" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="65996f80-d743-4f54-b465-de11ba4a7f15" ParentLink="Module_PortType" LowerBound="32.1" HigherBound="39.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_5" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="51898139-7f2e-419a-8c10-f4e7f65efb9b" ParentLink="PortType_OperationDeclaration" LowerBound="34.1" HigherBound="38.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="823a0e5b-82b9-48a1-9d65-40ef48901053" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="36.13" HigherBound="36.75">
+                    <om:Property Name="Ref" Value="Microsoft.BizTalk.Edi.BaseArtifacts.X12_997Schema.X12_997_Root" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="6e150591-dde9-48a5-8338-37319a472be4" ParentLink="Module_ServiceDeclaration" LowerBound="39.1" HigherBound="133.1">
+            <om:Property Name="InitializedTransactionType" Value="True" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ProcessUniversalEvent" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="VariableDeclaration" OID="274f4a3c-4ffc-43f4-91d7-dc4d4c68f9ae" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="56.1" HigherBound="57.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="GLC.Integration.CargowiseoneInboundCommon.Utility.SendStreamRequest" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="objSendstream" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="2e1dd5a5-1095-4a69-b216-f7dba872c831" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="57.1" HigherBound="58.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="strClient" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="LongRunningTransaction" OID="7d586934-0782-4eff-a00a-91c23b9a15d0" ParentLink="ServiceDeclaration_Transaction" LowerBound="40.21" HigherBound="40.67">
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Transaction_1" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="a9d927d5-ffbf-4b0e-9124-bb63ef51724f" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="52.1" HigherBound="53.1">
+                <om:Property Name="Type" Value="GLC.Integration.CargowiseoneInboundCommon.Schemas.UniversalInterchange" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MsgIn" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="37369a65-c88b-4b14-8fc6-f29d4325bdd2" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="53.1" HigherBound="54.1">
+                <om:Property Name="Type" Value="GLC.Integration.CargowiseoneInboundCommon.Schemas.UniversalEvent" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MsgEvent" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="a96cc0cd-8736-4feb-ab63-eda953249daa" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="54.1" HigherBound="55.1">
+                <om:Property Name="Type" Value="Microsoft.BizTalk.Edi.BaseArtifacts.X12_997Schema.X12_997_Root" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MsgEDI997" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="1ed11efd-18b3-408e-bb47-6ec30046abea" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="55.1" HigherBound="56.1">
+                <om:Property Name="Type" Value="GLC.Integration.CargowiseoneInboundCommon.Schemas.Outbound.LINC.LincFlatFileCSV" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MsgLinc" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="b1826562-d48a-42d0-a7d5-25acef200c3d" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="1d4c0c17-2716-427b-981f-391276467e27" ParentLink="ServiceBody_Statement" LowerBound="60.1" HigherBound="64.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="ReceiveUniversalEvent" />
+                    <om:Property Name="MessageName" Value="MsgEvent" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive_1" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Scope" OID="fccf6948-c9b1-497e-981a-ad1ccd54df9e" ParentLink="ServiceBody_Statement" LowerBound="64.1" HigherBound="131.1">
+                    <om:Property Name="InitializedTransactionType" Value="True" />
+                    <om:Property Name="IsSynchronized" Value="False" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Scope_1" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="VariableAssignment" OID="6fdfbe8a-8ed9-49e9-9b97-3c7698dd0fc8" ParentLink="ComplexStatement_Statement" LowerBound="69.1" HigherBound="71.1">
+                        <om:Property Name="Expression" Value="strClient=xpath(MsgEvent,&quot;string(/*[local-name()='UniversalEvent' and namespace-uri()='http://www.cargowise.com/Schemas/Universal/2011/11']/*[local-name()='Event' and namespace-uri()='http://www.cargowise.com/Schemas/Universal/2011/11']/*[local-name()='ContextCollection' and namespace-uri()='http://www.cargowise.com/Schemas/Universal/2011/11']/*[local-name()='Context' and namespace-uri()='http://www.cargowise.com/Schemas/Universal/2011/11'][1]/*[local-name()='Value' and namespace-uri()='http://www.cargowise.com/Schemas/Universal/2011/11'])&quot;);" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Expression_2" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Decision" OID="239fcc1c-16b7-4768-86f1-119f132a685d" ParentLink="ComplexStatement_Statement" LowerBound="71.1" HigherBound="120.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Decide_1" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="DecisionBranch" OID="4ff66b4f-45f6-4318-8e25-6efe1eea83e8" ParentLink="ReallyComplexStatement_Branch" LowerBound="72.21" HigherBound="120.1">
+                            <om:Property Name="Expression" Value="MsgEvent != null" />
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Rule_1" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="Decision" OID="6973f015-f1a5-43de-a562-eb0d8e521908" ParentLink="ComplexStatement_Statement" LowerBound="74.1" HigherBound="119.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Decide_2" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="DecisionBranch" OID="9593ae05-8492-450d-b242-e321844ab026" ParentLink="ReallyComplexStatement_Branch" LowerBound="75.25" HigherBound="86.1">
+                                    <om:Property Name="Expression" Value="strClient==&quot;Q10&quot;" />
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Rule_Q10" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="Construct" OID="17f7e56a-257e-40df-ae25-e91a83e05837" ParentLink="ComplexStatement_Statement" LowerBound="77.1" HigherBound="83.1">
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="ConstructMessage_2" />
+                                        <om:Property Name="Signal" Value="True" />
+                                        <om:Element Type="Transform" OID="491809b0-d6fe-4563-8455-06b5ac0970ee" ParentLink="ComplexStatement_Statement" LowerBound="80.1" HigherBound="82.1">
+                                            <om:Property Name="ClassName" Value="GLC.Integration.CargowiseoneInboundCommon.Schemas.Outbound.Q10.TransformUniversalEventToEDI997" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="Transform_2" />
+                                            <om:Property Name="Signal" Value="False" />
+                                            <om:Element Type="MessagePartRef" OID="1a8bbf9b-68f5-4203-89e7-39b924a08008" ParentLink="Transform_InputMessagePartRef" LowerBound="81.153" HigherBound="81.161">
+                                                <om:Property Name="MessageRef" Value="MsgEvent" />
+                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                <om:Property Name="Name" Value="MessagePartReference_1" />
+                                                <om:Property Name="Signal" Value="False" />
+                                            </om:Element>
+                                            <om:Element Type="MessagePartRef" OID="4cb28c05-7f80-433f-b68e-6e3d1b199a56" ParentLink="Transform_OutputMessagePartRef" LowerBound="81.44" HigherBound="81.53">
+                                                <om:Property Name="MessageRef" Value="MsgEDI997" />
+                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                <om:Property Name="Name" Value="MessagePartReference_2" />
+                                                <om:Property Name="Signal" Value="False" />
+                                            </om:Element>
+                                        </om:Element>
+                                        <om:Element Type="MessageRef" OID="fd7c40ab-e441-4a80-8d15-bfe74922ba7e" ParentLink="Construct_MessageRef" LowerBound="78.39" HigherBound="78.48">
+                                            <om:Property Name="Ref" Value="MsgEDI997" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                    </om:Element>
+                                    <om:Element Type="Send" OID="3a3bdb18-d0b8-4363-8d90-60cd54fbca28" ParentLink="ComplexStatement_Statement" LowerBound="83.1" HigherBound="85.1">
+                                        <om:Property Name="PortName" Value="SendEDI997" />
+                                        <om:Property Name="MessageName" Value="MsgEDI997" />
+                                        <om:Property Name="OperationName" Value="Operation_1" />
+                                        <om:Property Name="OperationMessageName" Value="Request" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Send_1" />
+                                        <om:Property Name="Signal" Value="True" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="DecisionBranch" OID="8b79510b-0b60-474f-9bce-f0bbc7e3c255" ParentLink="ReallyComplexStatement_Branch" LowerBound="86.30" HigherBound="97.1">
+                                    <om:Property Name="Expression" Value="strClient.ToUpper()==&quot;LINC&quot;" />
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Rule_Linc" />
+                                    <om:Property Name="Signal" Value="False" />
+                                    <om:Element Type="Construct" OID="5fa3e1a8-ef6f-4450-8d9b-fa719a30c98b" ParentLink="ComplexStatement_Statement" LowerBound="88.1" HigherBound="94.1">
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="ConstructMessage_1" />
+                                        <om:Property Name="Signal" Value="True" />
+                                        <om:Element Type="Transform" OID="14aafc24-78e3-47b3-b295-8dbe269cf0bf" ParentLink="ComplexStatement_Statement" LowerBound="91.1" HigherBound="93.1">
+                                            <om:Property Name="ClassName" Value="GLC.Integration.CargowiseoneInboundCommon.Schemas.Outbound.LINC.TransformLincEventToCSV" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="Transform_1" />
+                                            <om:Property Name="Signal" Value="False" />
+                                            <om:Element Type="MessagePartRef" OID="8cd12f21-f84c-4fa8-a5f3-3f30f506c975" ParentLink="Transform_InputMessagePartRef" LowerBound="92.144" HigherBound="92.152">
+                                                <om:Property Name="MessageRef" Value="MsgEvent" />
+                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                <om:Property Name="Name" Value="MessagePartReference_3" />
+                                                <om:Property Name="Signal" Value="False" />
+                                            </om:Element>
+                                            <om:Element Type="MessagePartRef" OID="886d7c3c-2dac-4c32-8a1c-414138bab13b" ParentLink="Transform_OutputMessagePartRef" LowerBound="92.44" HigherBound="92.51">
+                                                <om:Property Name="MessageRef" Value="MsgLinc" />
+                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                <om:Property Name="Name" Value="MessagePartReference_4" />
+                                                <om:Property Name="Signal" Value="False" />
+                                            </om:Element>
+                                        </om:Element>
+                                        <om:Element Type="MessageRef" OID="ef08cdf9-e3a7-4b8c-bef2-59297c1588f6" ParentLink="Construct_MessageRef" LowerBound="89.39" HigherBound="89.46">
+                                            <om:Property Name="Ref" Value="MsgLinc" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                    </om:Element>
+                                    <om:Element Type="Send" OID="06af85f4-d294-4bf4-88a6-414e6d7e3832" ParentLink="ComplexStatement_Statement" LowerBound="94.1" HigherBound="96.1">
+                                        <om:Property Name="PortName" Value="SendLincFlatFile" />
+                                        <om:Property Name="MessageName" Value="MsgLinc" />
+                                        <om:Property Name="OperationName" Value="Operation_1" />
+                                        <om:Property Name="OperationMessageName" Value="Request" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Send_2" />
+                                        <om:Property Name="Signal" Value="True" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="DecisionBranch" OID="a99984f3-e843-449c-856d-d36564fb4376" ParentLink="ReallyComplexStatement_Branch" LowerBound="97.30" HigherBound="108.1">
+                                    <om:Property Name="Expression" Value="strClient==&quot;CLABRD&quot;" />
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Rule_2" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="Construct" OID="182d56b6-30ee-4a9b-8543-91787316a49e" ParentLink="ComplexStatement_Statement" LowerBound="99.1" HigherBound="105.1">
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="ConstructMessage_3" />
+                                        <om:Property Name="Signal" Value="True" />
+                                        <om:Element Type="Transform" OID="520f087a-2f41-4936-a9ab-6d9b8f4e9cdb" ParentLink="ComplexStatement_Statement" LowerBound="102.1" HigherBound="104.1">
+                                            <om:Property Name="ClassName" Value="GLC.Integration.CargowiseoneInboundCommon.Schemas.Outbound.Q10.TransformUniversalEventToEDI997" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="Transform_3" />
+                                            <om:Property Name="Signal" Value="True" />
+                                            <om:Element Type="MessagePartRef" OID="3c41ebd2-698b-42f5-8c22-86343849614d" ParentLink="Transform_InputMessagePartRef" LowerBound="103.153" HigherBound="103.161">
+                                                <om:Property Name="MessageRef" Value="MsgEvent" />
+                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                <om:Property Name="Name" Value="MessagePartReference_5" />
+                                                <om:Property Name="Signal" Value="False" />
+                                            </om:Element>
+                                            <om:Element Type="MessagePartRef" OID="38438f25-d34c-409a-9dc3-3fe40a3ec94e" ParentLink="Transform_OutputMessagePartRef" LowerBound="103.44" HigherBound="103.53">
+                                                <om:Property Name="MessageRef" Value="MsgEDI997" />
+                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                <om:Property Name="Name" Value="MessagePartReference_6" />
+                                                <om:Property Name="Signal" Value="False" />
+                                            </om:Element>
+                                        </om:Element>
+                                        <om:Element Type="MessageRef" OID="18759599-cf51-417a-8b77-28f1227bfa10" ParentLink="Construct_MessageRef" LowerBound="100.39" HigherBound="100.48">
+                                            <om:Property Name="Ref" Value="MsgEDI997" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                    </om:Element>
+                                    <om:Element Type="Send" OID="fbc57f44-016a-4e19-98ac-16301ec18fec" ParentLink="ComplexStatement_Statement" LowerBound="105.1" HigherBound="107.1">
+                                        <om:Property Name="PortName" Value="SendClassicbrand" />
+                                        <om:Property Name="MessageName" Value="MsgEDI997" />
+                                        <om:Property Name="OperationName" Value="Operation_1" />
+                                        <om:Property Name="OperationMessageName" Value="Request" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Send_3" />
+                                        <om:Property Name="Signal" Value="True" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="DecisionBranch" OID="808423b8-f0a8-46f5-9aa1-b84f81359aaf" ParentLink="ReallyComplexStatement_Branch" LowerBound="108.30" HigherBound="119.1">
+                                    <om:Property Name="Expression" Value="strClient==&quot;DGCASA&quot;" />
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Rule_DGCasa" />
+                                    <om:Property Name="Signal" Value="False" />
+                                    <om:Element Type="Construct" OID="080baaf9-4bf9-45f6-8489-e5c9c34e273b" ParentLink="ComplexStatement_Statement" LowerBound="110.1" HigherBound="116.1">
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="ConstructMessage_4" />
+                                        <om:Property Name="Signal" Value="True" />
+                                        <om:Element Type="Transform" OID="52435b7e-7e13-47ba-b495-df321272a2c8" ParentLink="ComplexStatement_Statement" LowerBound="113.1" HigherBound="115.1">
+                                            <om:Property Name="ClassName" Value="GLC.Integration.CargowiseoneInboundCommon.Schemas.Outbound.Q10.TransformUniversalEventToEDI997" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="Transform_4" />
+                                            <om:Property Name="Signal" Value="True" />
+                                            <om:Element Type="MessagePartRef" OID="ec0aca47-1396-4354-939e-51d33a1f7919" ParentLink="Transform_InputMessagePartRef" LowerBound="114.153" HigherBound="114.161">
+                                                <om:Property Name="MessageRef" Value="MsgEvent" />
+                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                <om:Property Name="Name" Value="MessagePartReference_7" />
+                                                <om:Property Name="Signal" Value="False" />
+                                            </om:Element>
+                                            <om:Element Type="MessagePartRef" OID="87e385db-7ac4-4e63-a474-1a096cf26f7d" ParentLink="Transform_OutputMessagePartRef" LowerBound="114.44" HigherBound="114.53">
+                                                <om:Property Name="MessageRef" Value="MsgEDI997" />
+                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                <om:Property Name="Name" Value="MessagePartReference_8" />
+                                                <om:Property Name="Signal" Value="False" />
+                                            </om:Element>
+                                        </om:Element>
+                                        <om:Element Type="MessageRef" OID="2809684b-b117-4497-8f61-a5763f8a7fca" ParentLink="Construct_MessageRef" LowerBound="111.39" HigherBound="111.48">
+                                            <om:Property Name="Ref" Value="MsgEDI997" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                    </om:Element>
+                                    <om:Element Type="Send" OID="e6bc70f2-81c9-48ba-aaec-fff4c020725e" ParentLink="ComplexStatement_Statement" LowerBound="116.1" HigherBound="118.1">
+                                        <om:Property Name="PortName" Value="SendDGCASA" />
+                                        <om:Property Name="MessageName" Value="MsgEDI997" />
+                                        <om:Property Name="OperationName" Value="Operation_1" />
+                                        <om:Property Name="OperationMessageName" Value="Request" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Send_4" />
+                                        <om:Property Name="Signal" Value="True" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="DecisionBranch" OID="efbf4b00-e16a-4054-9ec3-65ce2fea85ed" ParentLink="ReallyComplexStatement_Branch">
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Else" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="DecisionBranch" OID="f5bdd653-3f91-486a-acda-a9dc9144bd0b" ParentLink="ReallyComplexStatement_Branch">
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Else" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Catch" OID="9d35e9de-c631-47e2-ad0b-c55db551a673" ParentLink="Scope_Catch" LowerBound="123.1" HigherBound="129.1">
+                        <om:Property Name="ExceptionName" Value="ex" />
+                        <om:Property Name="ExceptionType" Value="System.SystemException" />
+                        <om:Property Name="IsFaultMessage" Value="False" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="CatchException_1" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="VariableAssignment" OID="3315025f-e7f6-4e6a-b83d-6c30a7e3112d" ParentLink="Catch_Statement" LowerBound="126.1" HigherBound="128.1">
+                            <om:Property Name="Expression" Value="objSendstream.logdate(&quot;EDI997&quot;,ex.Message.ToString(),&quot;Failed&quot;);" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Expression_1" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="a20662a6-db63-4e4e-b3c1-51cd6bdf4072" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="42.1" HigherBound="44.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="GLC.Integration.Cargowiseone.Orchestration.PortType_2" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ReceiveUniversalEvent" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="28874276-21fd-40fb-887d-638d7180e860" ParentLink="PortDeclaration_CLRAttribute" LowerBound="42.1" HigherBound="43.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="7d418199-40fc-44e0-bfd6-17d549055eba" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="44.1" HigherBound="46.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="22" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="GLC.Integration.Cargowiseone.Orchestration.PortType_3" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SendEDI997" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="e4c12da4-93bb-47aa-9b4d-f0171b391a61" ParentLink="PortDeclaration_CLRAttribute" LowerBound="44.1" HigherBound="45.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="6f2fd9f3-2045-4a7a-80bb-55749b0af9c3" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="46.1" HigherBound="48.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="GLC.Integration.Cargowiseone.Orchestration.PortType_4" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SendLincFlatFile" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="f89f9e5b-d0e4-4a2b-83af-aa6f3bed01db" ParentLink="PortDeclaration_CLRAttribute" LowerBound="46.1" HigherBound="47.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="51b2caf8-c095-42ac-aa0d-d41fce1e71f2" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="48.1" HigherBound="50.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="GLC.Integration.Cargowiseone.Orchestration.SendCB" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SendClassicbrand" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="ac9c649e-705e-4295-8f83-0eb360e6cec1" ParentLink="PortDeclaration_CLRAttribute" LowerBound="48.1" HigherBound="49.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="d3963301-fc89-426b-8c79-a3079a865af8" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="50.1" HigherBound="52.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="GLC.Integration.Cargowiseone.Orchestration.PortType_5" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SendDGCASA" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="acd6f929-65a5-4efc-995d-a69dfc75b11d" ParentLink="PortDeclaration_CLRAttribute" LowerBound="50.1" HigherBound="51.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module GLC.Integration.Cargowiseone.Orchestration
+{
+    internal porttype PortType_2
+    {
+        oneway Operation_1
+        {
+            GLC.Integration.CargowiseoneInboundCommon.Schemas.UniversalEvent
+        };
+    };
+    internal porttype PortType_3
+    {
+        oneway Operation_1
+        {
+            Microsoft.BizTalk.Edi.BaseArtifacts.X12_997Schema.X12_997_Root
+        };
+    };
+    internal porttype PortType_4
+    {
+        oneway Operation_1
+        {
+            GLC.Integration.CargowiseoneInboundCommon.Schemas.Outbound.LINC.LincFlatFileCSV
+        };
+    };
+    internal porttype SendCB
+    {
+        oneway Operation_1
+        {
+            Microsoft.BizTalk.Edi.BaseArtifacts.X12_997Schema.X12_997_Root
+        };
+    };
+    internal porttype PortType_5
+    {
+        oneway Operation_1
+        {
+            Microsoft.BizTalk.Edi.BaseArtifacts.X12_997Schema.X12_997_Root
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service longrunning transaction ProcessUniversalEvent
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements PortType_2 ReceiveUniversalEvent;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType_3 SendEDI997;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType_4 SendLincFlatFile;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses SendCB SendClassicbrand;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType_5 SendDGCASA;
+        message GLC.Integration.CargowiseoneInboundCommon.Schemas.UniversalInterchange MsgIn;
+        message GLC.Integration.CargowiseoneInboundCommon.Schemas.UniversalEvent MsgEvent;
+        message Microsoft.BizTalk.Edi.BaseArtifacts.X12_997Schema.X12_997_Root MsgEDI997;
+        message GLC.Integration.CargowiseoneInboundCommon.Schemas.Outbound.LINC.LincFlatFileCSV MsgLinc;
+        GLC.Integration.CargowiseoneInboundCommon.Utility.SendStreamRequest objSendstream;
+        System.String strClient;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("1d4c0c17-2716-427b-981f-391276467e27")]
+            activate receive (ReceiveUniversalEvent.Operation_1, MsgEvent);
+            objSendstream = new GLC.Integration.CargowiseoneInboundCommon.Utility.SendStreamRequest();
+            strClient = "";
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("fccf6948-c9b1-497e-981a-ad1ccd54df9e")]
+            scope
+            {
+                body
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("6fdfbe8a-8ed9-49e9-9b97-3c7698dd0fc8")]
+                    strClient=xpath(MsgEvent,"string(/*[local-name()='UniversalEvent' and namespace-uri()='http://www.cargowise.com/Schemas/Universal/2011/11']/*[local-name()='Event' and namespace-uri()='http://www.cargowise.com/Schemas/Universal/2011/11']/*[local-name()='ContextCollection' and namespace-uri()='http://www.cargowise.com/Schemas/Universal/2011/11']/*[local-name()='Context' and namespace-uri()='http://www.cargowise.com/Schemas/Universal/2011/11'][1]/*[local-name()='Value' and namespace-uri()='http://www.cargowise.com/Schemas/Universal/2011/11'])");
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("239fcc1c-16b7-4768-86f1-119f132a685d")]
+                    if (MsgEvent != null)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("6973f015-f1a5-43de-a562-eb0d8e521908")]
+                        if (strClient=="Q10")
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("17f7e56a-257e-40df-ae25-e91a83e05837")]
+                            construct MsgEDI997
+                            {
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("491809b0-d6fe-4563-8455-06b5ac0970ee")]
+                                transform (MsgEDI997) = GLC.Integration.CargowiseoneInboundCommon.Schemas.Outbound.Q10.TransformUniversalEventToEDI997 (MsgEvent);
+                            }
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("3a3bdb18-d0b8-4363-8d90-60cd54fbca28")]
+                            send (SendEDI997.Operation_1, MsgEDI997);
+                        }
+                        else if (strClient.ToUpper()=="LINC")
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("5fa3e1a8-ef6f-4450-8d9b-fa719a30c98b")]
+                            construct MsgLinc
+                            {
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("14aafc24-78e3-47b3-b295-8dbe269cf0bf")]
+                                transform (MsgLinc) = GLC.Integration.CargowiseoneInboundCommon.Schemas.Outbound.LINC.TransformLincEventToCSV (MsgEvent);
+                            }
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("06af85f4-d294-4bf4-88a6-414e6d7e3832")]
+                            send (SendLincFlatFile.Operation_1, MsgLinc);
+                        }
+                        else if (strClient=="CLABRD")
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("182d56b6-30ee-4a9b-8543-91787316a49e")]
+                            construct MsgEDI997
+                            {
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("520f087a-2f41-4936-a9ab-6d9b8f4e9cdb")]
+                                transform (MsgEDI997) = GLC.Integration.CargowiseoneInboundCommon.Schemas.Outbound.Q10.TransformUniversalEventToEDI997 (MsgEvent);
+                            }
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("fbc57f44-016a-4e19-98ac-16301ec18fec")]
+                            send (SendClassicbrand.Operation_1, MsgEDI997);
+                        }
+                        else if (strClient=="DGCASA")
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("080baaf9-4bf9-45f6-8489-e5c9c34e273b")]
+                            construct MsgEDI997
+                            {
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("52435b7e-7e13-47ba-b495-df321272a2c8")]
+                                transform (MsgEDI997) = GLC.Integration.CargowiseoneInboundCommon.Schemas.Outbound.Q10.TransformUniversalEventToEDI997 (MsgEvent);
+                            }
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("e6bc70f2-81c9-48ba-aaec-fff4c020725e")]
+                            send (SendDGCASA.Operation_1, MsgEDI997);
+                        }
+                    }
+                }
+                exceptions
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("9d35e9de-c631-47e2-ad0b-c55db551a673")]
+                    catch (System.SystemException ex)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("3315025f-e7f6-4e6a-b83d-6c30a7e3112d")]
+                        objSendstream.logdate("EDI997",ex.Message.ToString(),"Failed");
+                    }
+                }
+            }
+        }
+    }
+}
+
